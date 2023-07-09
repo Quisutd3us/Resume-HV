@@ -1,0 +1,89 @@
+/*general styles*/
+*{
+
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 2.5rem;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+.dark-section{
+  background-color: #1b1b32;
+  color: whitesmoke;
+}
+.section-title{
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Rubik Dirt', cursive;
+}
+.section-text{
+  font-size: 1.2rem;
+
+}
+
+/*navbar*/
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*section Hero*/
+
+.hero{
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+
+}
+.main-hero{
+  padding: 3rem;
+}
+
+.main-hero h2{
+  font-size: 1.5rem;
+  color: #615151;
+}
+.hero-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/*Aboutme section*/
+
+.aboutMe{
+  height: 500px;
+  padding: 10px;
+}
+
+.aboutMe .container-aboutMe{
+  max-width: 620px;
+  text-align: center;
+}
+/*media queries*/
+
+@media screen and (max-width: 767px) {
+  .navbar-brand{
+    display: none;
+  }
+}
+
+@media screen and (min-height: 700px){
+  .hero-tech-img{
+    max-width: 600px;
+  }
+}
