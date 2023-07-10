@@ -258,6 +258,13 @@ h1 {
   .navbar-brand {
     display: none;
   }
+  .testimonyImg {
+    height: 120px;
+    width: 120px;
+  }
+  .testimony-text{
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-height: 700px) {
