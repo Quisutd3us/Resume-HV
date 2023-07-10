@@ -1,30 +1,37 @@
 /*general styles*/
-*{
+* {
 
 }
 
-section{
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
   font-family: 'Rubik Dirt', cursive;
 }
 
-.dark-section{
+.dark-section {
   background-color: #1b1b32;
   color: whitesmoke;
 }
-.section-title{
+
+.light-section {
+  background-color: whitesmoke;
+  color: #3c3c3c;
+}
+
+.section-title {
   font-size: 2rem;
   padding: 15px 0;
   font-family: 'Rubik Dirt', cursive;
 }
-.section-text{
+
+.section-text {
   font-size: 1.2rem;
 
 }
@@ -42,21 +49,23 @@ h1{
 
 /*section Hero*/
 
-.hero{
+.hero {
   background-color: #f5f6f7;
   min-height: 450px;
   text-align: center;
 
 }
-.main-hero{
+
+.main-hero {
   padding: 3rem;
 }
 
-.main-hero h2{
+.main-hero h2 {
   font-size: 1.5rem;
   color: #615151;
 }
-.hero-img{
+
+.hero-img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -65,25 +74,61 @@ h1{
 
 /*Aboutme section*/
 
-.aboutMe{
+.aboutMe {
   height: 500px;
   padding: 10px;
 }
 
-.aboutMe .container-aboutMe{
+.aboutMe .container-aboutMe {
   max-width: 620px;
   text-align: center;
 }
+
+
+/*experience section*/
+.experience {
+  padding: 40px 40px 60px 60px;
+}
+
+.experience .container .row >div  {
+  border:solid 1px lightgray;
+  padding:50px 20px;
+  transition: all 0.4s ease-in;
+}
+
+.experience .container .row >div:hover{
+  color:whitesmoke;
+  background-color: #1b1b32;
+}
+
+.experience p:nth-child(2){
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.experience .bi{
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: #7ade30 ;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+}
+.experience .badgesExperience{
+  font-weight: bold;
+  margin: 50px 0px;
+}
+
 /*media queries*/
 
 @media screen and (max-width: 767px) {
-  .navbar-brand{
+  .navbar-brand {
     display: none;
   }
 }
 
-@media screen and (min-height: 700px){
-  .hero-tech-img{
+@media screen and (min-height: 700px) {
+  .hero-tech-img {
     max-width: 600px;
   }
 }
