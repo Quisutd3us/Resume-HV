@@ -11,8 +11,8 @@ section {
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-family: 'Rubik Dirt', cursive;
+  font-size: 3.5rem;
+  font-family: 'Freehand', cursive;
 }
 
 .dark-section {
@@ -26,14 +26,18 @@ h1 {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: 'Freehand', cursive;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #3c3c3c;
 }
 
 .section-text {
   font-size: 1.2rem;
-
 }
 
 /*navbar*/
@@ -90,33 +94,92 @@ h1 {
   padding: 40px 40px 60px 60px;
 }
 
-.experience .container .row >div  {
-  border:solid 1px lightgray;
-  padding:50px 20px;
+.experience .container .row > div {
+  border: solid 1px lightgray;
+  padding: 50px 20px;
   transition: all 0.4s ease-in;
 }
 
-.experience .container .row >div:hover{
-  color:whitesmoke;
+.experience .container .row > div:hover {
+  color: whitesmoke;
   background-color: #1b1b32;
 }
 
-.experience p:nth-child(2){
+.experience p:nth-child(2) {
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
 }
 
-.experience .bi{
+.experience .bi {
   border-radius: 50%;
   font-size: 2.5rem;
-  color: #7ade30 ;
+  color: #7ade30;
   background-color: #0a0a23;
   padding: 8px 19px;
 }
-.experience .badgesExperience{
+
+.experience .badgesExperience {
   font-weight: bold;
   margin: 50px 0px;
+}
+
+/*projects section*/
+.projectsRecent {
+  padding: 40px;
+}
+
+.projectsRecent img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.projectContainer {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.project {
+  position: relative;
+}
+
+.project:hover img {
+  opacity: 0.2;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.iconsProjectContainer {
+  display: flex;
+
+}
+
+.iconsProjectContainer i {
+  color: #3c3c3c;
+  font-size: 60px;
+  margin: 10px;
 }
 
 /*media queries*/
